@@ -14,9 +14,6 @@
 
 
 def duplicates(nums):
-    if len(nums) == len(set(nums)):
-        return False
-    else:
-        return True
+    return len(nums) != len(set(nums))
     
 print(duplicates([1,2,4,5,2]))
