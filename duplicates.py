@@ -12,7 +12,6 @@
     Output: false
 '''
 
-
 def duplicates(nums):
     return len(nums) != len(set(nums))
     
