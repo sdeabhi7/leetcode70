@@ -30,6 +30,14 @@ def missingnumber(nums):
 # The most optimized solution
 def missingnumber(nums):
     return sum(range(len(nums)+1)) - sum(nums)
-            
 
+# The sum of the first n natural numbers is given by the formula
+# (n * (n+1)) / 2
+# the expected sum of numbers from 0 to n
+# minus the actual sum of the array
+# The difference is the missing number.
+def missingnumber(nums):
+    k = len(nums)
+    return int((k * (k + 1))/ 2) - sum(nums)
+            
 print(missingnumber([0,1,2,3,4]))
